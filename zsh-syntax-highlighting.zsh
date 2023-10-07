@@ -45,7 +45,7 @@ if true; then
     # When running from a source tree without 'make install', $ZSH_HIGHLIGHT_REVISION
     # would be set to '$Format:%H$' literally.  That's an invalid value, and obtaining
     # the valid value (via `git rev-parse HEAD`, as Makefile does) might be costly, so:
-    ZSH_HIGHLIGHT_REVISION=HEAD
+    typeset -g ZSH_HIGHLIGHT_REVISION=HEAD
   fi
 fi
 
